@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            overflow: hidden;
+            width: 800px;
+            max-width: 100%;
+        }
+        .image {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+        .form-container {
+            padding: 40px;
+            width: 50%;
+        }
+        .form-container h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+        }
+        .form-container p {
+            margin: 0 0 10px;
+            color: #666;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container .btn:hover {
+            background-color: #d32f2f;
+        }
+        .form-container .google-btn {
+            background-color: #ffffff;
+            color: #757575;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-container .google-btn img {
+            margin-right: 10px;
+        }
+        .form-container .google-btn:hover {
+            background-color: #f5f5f5;
+        }
+        .form-container a {
+            color: #f44336;
+            text-decoration: none;
+        }
+        .form-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image">
+        <img src="login.svg" alt="Illustration"> 
+    </div>
+    <div class="form-container">
+        <h2>Create an Account</h2>
+        <p>Enter your details below</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email or Phone Number" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" class="btn">Create Account</button>
+            <button type="button" class="btn google-btn">
+                <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google logo"> 
+            </button>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+</div>
+
+</body>
+</html>

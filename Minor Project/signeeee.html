@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="website icon" type="png" href="website logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1><br><br>
+        <form id="signup-form">
+            
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email"  required>
+                
+                <small>Error message</small>
+            </div><br>
+            <div class="form-group">
+                <label for="password"><i class="toggle-password" id="togglePassword">👁️</i></label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+               
+                <small>Error message</small>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">log in</a></p>
+       <br> </form>
+        <p>Signup with Facbook</p>
+        <div class="facbook">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADFUlEQVR4Ab2XA4ycURSFJ52pbdu27TZOEau2bRtRGaO2g9q2bdva3a8nufXg/cubfLuDO++eh3vmjc9LpOpKQJQSvcRqcUW8E1EG78RVsUb0FqVFwDGs58I1xAJx24qBgyjLZaGoKQJxLZ5bTBfPBHHkmZgh8sS2eDWxV8QIEoB9oobX4o3EFYEXUnYxUnSG5AYphL3+dy5XRRNX8epW3FvhgBUie18oPhwqjIFyo6HIUHstTbeQImqEK57Hlh1cpOhigzebBQt2wdFbcOcFPHkLj9/AzWdw/Ba0nW8rEmI78v5fPJmY7nXmWXrDtC3w+iMRY9AK8HcKOc5M4f9bQE3x1F3c/o9eB9+iAOIs4Jmo9au43/ocImPLWWkc3HsJEA8BxiLh95lrcUvgItDJBg0VMTHw6DXsugzrT8Km09Au9BkwzKzK+sxe+e5l+VPr/9LDhIwdF6HaBMjY0w5o2u5BXRDKMfv4zNu9Hb5MvWDPFYLiwxdoPReSdbS8v3GMu87nve+tt4/dIihuP4diw8yALN8z1ySAt67C5nKQrQ+cuE1QXH0M+QdBoJPlGp5W4L0EEBWpeIYeUHSYzbDyODh3n6C49QxqT7YcOaKwz+izLhExEQTYrGtOgksP4e4La78v3wkKeQL3X5kbCuXByTtQZpSN4RLwNlLbNZgG7z4T6zh7D/IMMNt2bcGVxBCw/pS1omMLrksAaxJDwIxttvwS4GzD3mGMSAOYuRy+YYfvwgP4+JWg+PLNzsnZe5Z3VrSfbxNwXN36SgBlxK3QXWDLmKu/UWIEnLlHUNx4ChXGKqcf5O5vpHd3wJ1fVuwXCyP6gHmBjCi8DxQYBFoxy/XmgouF3+PXsQ2YI5yAJ1BwsBX2flml9t/3Ab+YkYQCZgl/qCvZviQQsF/kDXcvrCGuJqKAa6Km62bcWFxNcAFWvGlwxfArsT8BBRxwzDzsNX2meB4PAc/FLJE3Pj9Oa4pFGvyOBER5EBAl7lifUyvBfiXLVsvkHUifiw9ZB1wX70UM4voT3hcewnUZ0Trl9hVlvBb+AQNcQrB9dXA4AAAAAElFTkSuQmCC" alt="">
+           
+        </div>
+        <p>Signup with Google</p>
+        <div class="google">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAvVBMVEVHcEz8/f3////////+/v7s7u/6+vr5+vr5+vr9/f3////////5+vr////////Kzs/////////9/v74+fn4+fn////8vwbsTkJFiPPrQjI7q1gpp00yqVPrSTlAhfX9/f2hv/nwgHj2tLGt2bkqe/Q2gPV+qPd7woza5f2WuPns8v5ZtnHD48n92Yj80Wn+6sD4yMXtZ13znpn8xSnwuh3v6+WIwbFwoPb0qKPpKxT1mx7AtydjuXgcpjNCk8nTYqeQAAAAFXRSTlMA5d2fnApdnVLJpWJiowsJZNGXl5g9ng+vAAABP0lEQVQokY2S2XqCMBCFQVGWulRbkIRABASK0FZtq3Z9/8fqZCDK0oueCzJf/sxhJhlF+Z/G1kJVF9a4T2ZD+6LhrM1u7ZZumsyyO5pe2RQ3+O4Qhoddbd32jHzigwiJms4jTAvJqtb7GekIoSbC0F+tCNnvCSFhZawhRE/I84UfP4eyKMEMEXxA3lunYqN2fXZe/ajbjvA1YX10HIeLjXyNyrcQmwAHsD45zgue3gSozQPEgx50UYmELdtTmqYngNJ2WRVEY1nIOnATsS5lK5+MenUr28ANUtmKIvxij1KGuaUbuFgPxxvSxd4Xo9TzisLz2E+SS1e4eCylgFzK4Aj7PuJLVBevTPBfMSQxBp+qsol8UK167DLLsmNZlaVfR0Hv3muDwVjyJuKd8ZzrF8z1eX90jXtTVc07o0/+1C9hwDM1yvfWEgAAAABJRU5ErkJggg==" alt="">
+           
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

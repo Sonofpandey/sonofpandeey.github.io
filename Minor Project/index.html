@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NePiLap</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="top">
+      <h5><a href=""></a>Need help?</h5>
+      <a href="#">Track an order</a>
+    </div></nav>
+  <nav class="mid-navbar">
+    <div class="logo">
+      <a href=""><img src="NePiLap.png" alt="NePiLap.png" width="250"
+          height="80"></a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search.....">
+      <a href="#"><span><i class="fas fa-search"></i></span></a>
+    </div>
+    <ul>
+
+      <li><a href="login.html"><i class="fa-solid fa-user"></i> <button id="loginButton">LogIn</button>
+        <!-- <i class="fa-solid fa-sort-down"></i> -->
+        </a>
+      </li>
+      <li><a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i> MY CART <i
+            class="fa-solid fa-sort-down"></i></a></li>
+    </ul>
+
+    <!-- <div class="language-dropdown">
+      <select>
+          <option value="en">English</option>
+          <option value="ne">नेपाली</option>
+      </select>
+  </div> -->
+
+
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The form
+    <form class="ok">
+      <input type="text" placeholder="Search...">
+      <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+    </form> -->
+    
+  </nav>
+  <div class="down-nav">
+
+ 
+    <ul id="navList">
+       
+        <li class="dropdown">
+          <a href="" class="dropdown-btn">About NePiLap</a>
+          
+      </li>
+        
+        <li class="dropdown">
+            <a href="#" class="dropdown-btn">Services<i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-content">
+              <div class="serv">
+                <div class="yata">
+                  <li><a href="#">Wide range of laptop models.</a></li>
+                  <li><a href="#">Intuitive website navigation.</a></li>
+                  <li><a href="#">Competitive pricing and promotions.</a></li>
+                  <li><a href="#">Secure payment options.</a></li>
+                  <li><a href="#">Fast and reliable shipping with tracking.</a></li>
+                </div>
+          
+                 <div class="uta">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  
+                 </div></div>
+            </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-btn">Laptop & Price<i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <div class="price">
+              <div class="yata">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </div>
+        
+               <div class="uta">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                
+               </div></div>
+              
+            
+          </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-btn">Brands<i class="fas fa-caret-down"></i></a>
+        <ul class="dropdown-content">
+          <div class="brand">
+        
+          <li><a href="#">Apple</a></li>
+          <li><a href="#">Acer</a></li>
+          <li><a href="#">Lenovo</a></li>
+          <li><a href="#">HP</a></li>
+          <li><a href="#">Dell</a></li>
+          <li><a href="#">Asus</a></li>
+         
+          </div>
+        </ul>
+    </li>
+   
+    <li class="dropdown">
+      <a href="contact.html" class="dropdown-btn">Contact </a>
+  </li>
+
+  
+        
+    </ul>
+  </div>
+
+  
+
+  <!-- <div class="down-nav">
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-btn">Services <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+              <li><a href="#">Pre-purchase Consultation</a></li>
+              <li><a href="#">Software Installation</a></li>
+              <li><a href="#">Extended Warranty</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">LAPTOP PRICE</a></li>
+        <li><a href="#">GAMER'S ZONE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="#">ABOUT US</a></li>
+      </ul>
+
+    </nav>
+  </div> -->
+  
+  <!-- <div class="conic"></div> -->
+   <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <img src="website photo 3.jpg" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>MacBook Pro</h1>
+          <!-- <p>The Power to Make Anything Possible.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+       <img src="website photo 2.jpg" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>ASUS</h1>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+       <img src="website photo 1.jpg" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>HP</h1>
+          <p></p>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+
+
+  <!--------------------------------- Utsav start---------------------------------->
+
+  <div class="container">
+    <section class="new-arrival">
+      <div class="header">
+        <div class="box"></div>
+        <div class="text">
+          <h4>Featured</h4>
+        </div>
+      </div>
+      <div class="con">
+      <h1>New Arrival</h1></div>
+      <div class="grid-container">
+        <div class="large-box-1">
+          <div class="image-container">
+            <img src="laptop.jpg" alt="Gaming Laptop" class="image" />
+            <div class="overlay">
+              <div class="text">
+                <h1>Gaming <br> Laptop</h1><br />Gamming is the best laptop in the world<br />It
+                have light in the keywords
+                <br>
+                <a href="">Shop Now <i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="large-box-2">
+          <div class="image-container">
+            <img
+              src="yo laptop.jpg"
+              alt="Detailed Laptop Mockup"
+              class="image"
+            />
+            <div class="overlay">
+              <div class="textt"><h1>DETAILED LAPTOP MOCKUP</h1><br>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-box">
+          <div class="image-container">
+            <img src="macbook.avif" alt="Laptop 1" class="image" />
+            <div class="overlay">
+              <div class="text">Laptop 1</div>
+            </div>
+          </div>
+        </div>
+        <div class="small-box">
+          <div class="image-container">
+            <img src="normal laptop.jpg" alt="Laptop 2" class="image" />
+            <div class="overlay">
+              <div class="text">Laptop 2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 000000000000000000000000000000000000000 -->
+    <section class="categories">
+      <div class="header">
+        <div class="box"></div>
+        <div class="text">
+          <h4>Categoreis</h4>
+        </div>
+      </div>
+      <div class="con">
+      <h1>Borwse By Category</h1></div>
+      <!--  -->
+      <div class="icon-container">
+        <div class="icon-box">
+          <img src="monitor.png" alt="Monitor" />
+          <p>Monitor</p>
+        </div>
+        <div class="icon-box">
+          <img src="computer.png" alt="Computers" />
+          <p>Computers</p>
+        </div>
+        <div class="icon-box">
+          <img src="headphone.png" alt="Headphones" />
+          <p>HeadPhones</p>
+        </div>
+        <div class="icon-box">
+          <img src="mouse.png" alt="Mouse" />
+          <p>Mouse</p>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section class="services">
+      <div class="service-box">
+        <img src="fast-delivery.png" alt="Fast Delivery" />
+        <p>FREE AND Super FAST DELIVERY</p>
+        <span>Free delivery for all orders over Rs. 10,000</span>
+      </div>
+      <div class="service-box">
+        <img src="support.png" alt="Customer Service" />
+        <p>24/7 CUSTOMER SERVICE</p>
+        <span>Friendly 24/7 customer support</span>
+      </div>
+      <div class="service-box">
+        <img src="verified-user.png" alt="Money Back" />
+        <p>MONEY BACK GUARENTEE
+        </p>
+        <span>We return money within 1 days</span>
+      </div>
+    </section>
+  </div><br><br>
+
+
+<!---------------------------------------------Utsab end-------------------------------------------------------------------------->
+
+
+
+  <!-- <img src="website.jpg" alt=""> -->
+  <!-- <div style="--clip:0%" class="video"><video autoplay muted loop src="video (1080p).mp4"></video>
+    </div> -->
+  <!-- <div class="backimg">
+    <img
+      src="https://img.freepik.com/premium-photo/remote-worker-with-laptop-enjoying-serene-nature-from-mountain-top-overlooking-tropical-lagoon_996993-8459.jpg"
+      alt="">
+  </div> -->
+
+
+
+
+  <!-- our team -->  
+
+
+  <!-- <div class="team font-Pp-Neue-Machina">
+    <div class=" team section font- py-20 ">
+      <h1 class="text-center text-8xl tracking-tight ">Our team</h1>
+
+      <div class="list mt-10 w-full px-10">
+        <div class="anil">
+          <div class="listelem border-b-2 border-black w-full py-[3rem]  relative">
+            <div class="relative flex item-center justify-between z[3] ">
+
+              <div class="left flex gap-20">
+                <h3 class="text-5xl">01</h3>
+                <h1 class="text-5xl ">Anil Pandey</h1>
+              </div>
+              <h3 class="text-3xl">CEO</h3>
+            </div>
+            <div
+              class="picture opacity-0 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[15rem]  h-[15rem]  overflow-hidden rounded-full bg-red-500">
+            </div>
+
+            <div class="bluelayer absolute z[2] top-0 left-0 w-full h-[0%]">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="list mt-10 w-full px-10">
+        <div class="anil">
+          <div class="listelem border-b-2 border-black w-full py-[3rem]  relative">
+            <div class="relative flex item-center justify-between z[3] ">
+
+              <div class="left flex gap-20">
+                <h3 class="text-5xl">02</h3>
+                <h1 class="text-5xl ">Utsav Dulal</h1>
+              </div>
+              <h3 class="text-3xl">CEO</h3>
+            </div>
+            <div
+              class="picture opacity-0 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[15rem]  h-[15rem]  overflow-hidden rounded-full bg-red-500">
+            </div>
+          </div>
+          <div class="list mt-10 w-full">
+            <div class="anil">
+              <div class="listelem border-b-2 border-black w-full py-[3rem]  relative">
+                <div class="relative flex item-center justify-between z[3] ">
+
+                  <div class="left flex gap-20">
+                    <h3 class="text-5xl">03</h3>
+                    <h1 class="text-5xl ">Aabash Subedi</h1>
+                  </div>
+                  <h3 class="text-3xl">CEO</h3>
+                </div>
+                <div
+                  class="picture opacity-0 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[15rem]  h-[15rem]  overflow-hidden rounded-full bg-red-500">
+                </div>
+              </div>
+
+              <div class="list mt-10 w-full ">
+                <div class="anil">
+                  <div class="listelem border-b-2 border-black w-full py-[3rem]  relative">
+                    <div class="relative flex item-center justify-between z[3] ">
+
+                      <div class="left flex gap-20">
+                        <h3 class="text-5xl">04</h3>
+                        <h1 class="text-5xl ">Hanish Kafle</h1>
+                      </div>
+                      <h3 class="text-3xl">CEO</h3>
+                    </div>
+                    <div
+                      class="picture opacity-0 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[15rem]  h-[15rem]  overflow-hidden rounded-full bg-red-500">
+                    </div> -->
+<!-- ---------------------------------------------------hanish start-------------------------- -->
+
+<section class="mindlo">
+
+
+  <div class="sidebar">
+      <h2>Category</h2>
+      <ul>
+          <li>New Model</li>
+          <li>Old Laptop</li>
+          <li>Macbooks</li>
+          <li>Basic Mice</li>
+          <li>DIY Laptop</li>
+          <li>Monitor</li>
+          <li class="view-more">+View more</li>
+      </ul>
+      <h2>Brand</h2>
+      <ul>
+          <li><input type="checkbox"> Apple</li>
+          <li><input type="checkbox"> HP</li>
+          <li><input type="checkbox"> Asus</li>
+          <li><input type="checkbox"> Lenovo</li>
+          <li><input type="checkbox"> Dell</li>
+          <li><input type="checkbox"> MSI</li>
+          <li class="view-more">+View more</li>
+      </ul>
+      <h2>Price</h2>
+      <div class="price-filter">
+          <input type="number" placeholder="Min">
+          <span>-</span>
+          <input type="number" placeholder="Max">
+          <button>Apply</button>
+      </div>
+
+      <h2>Storage</h2>
+      <ul>
+          <li><input type="checkbox"> 64GB</li>
+          <li><input type="checkbox"> 128GB</li>
+          <li><input type="checkbox"> 256GB</li>
+          <li><input type="checkbox"> 512GB</li>
+          <li><input type="checkbox"> 1TB</li>
+          <li><input type="checkbox"> 2TB</li>
+          <li class="view-more">+View more</li>
+
+
+
+      </ul>
+
+      <h2>RAM</h2>
+      <ul>
+          <li><input type="checkbox"> 2GB</li>
+          <li><input type="checkbox"> 4GB</li>
+          <li><input type="checkbox"> 8GB</li>
+          <li><input type="checkbox"> 16GB</li>
+          <li><input type="checkbox"> 32GB</li>
+          <li><input type="checkbox"> 64GB</li>
+          <li class="view-more">+View more</li>
+
+
+
+      </ul>
+  </div>
+  <!-- END RIGT SIDE SITE BAR -->
+
+
+  <div class="hanish">
+
+     <div class="card" alt="">
+
+
+
+           <a href="product deails.html"><img src="image1.jpg" alt=""></a>
+          <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+           <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+      </div>
+      <div class="card">
+       <a href="product deails.html" >  <img src="image2.webp" alt="Laptop 2"></a>
+          <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image3.jpg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+      </div>
+
+
+      <div class="card">
+
+          <a href="product deails.html"><img src="image 4.jpg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image9.webp" alt=""></a>                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image10.jpg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+      </div>
+
+
+      <div class="card">
+
+          <a href="product deails.html"><img src="image13.webp" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image14.jpeg" alt=""></a>                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image15.jpeg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+      </div>
+
+      <div class="card">
+
+          <a href="product deails.html"><img src="image16.jpeg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image17.jpg" alt=""></a>                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image2.webp" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+      </div>
+
+
+      <div class="card">
+
+          <a href="product deails.html"><img src="image1.jpg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image 4.jpg" alt=""></a>                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+      </div>
+      <div class="card">
+
+          <a href="product deails.html"><img src="image9.webp" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+      </div>
+
+      <div class="card">
+
+          <a href="product deails.html"><img src="image13.webp" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+          <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                  class="discount">5% off</span></p>
+          <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+      </div>
+      
+      <!-- Repeat for other laptop listings -->
+  </div>
+
+</section><br><br>
+
+
+
+
+ <!-- ---------------------------------------------------hanish end-------------------------- -->
+
+                    <!-------------------------------------Aabash start------------------------------------------>
+
+                  
+                    <div class="info">
+                    <a href="billingdeals.html"><button>Billing Info</button></a></div>
+<!--
+                    <div class="Aabash">
+                      <div class="nice">
+                          <h2 align="center">_____Billing Info_____</h2>
+                          <form>
+                              <label for="fname">First Name*</label>
+                              <input type="text" id="fname" name="fname" required>
+              
+                              <label for="cname">Company Name</label>
+                              <input type="text" id="cname" name="cname">
+              
+                              <label for="address">Street Address*</label>
+                              <input type="text" id="address" name="address" required>
+              
+                              <label for="apartment">Apartment, floor, etc. (optional)</label>
+                              <input type="text" id="apartment" name="apartment">
+              
+                              <label for="city">Town/City*</label>
+                              <input type="text" id="city" name="city" required>
+              
+                              <label for="phone">Phone Number*</label>
+                              <input type="text" id="phone" name="phone" required>
+              
+                              <label for="email">Email Address*</label>
+                              <input type="email" id="email" name="email" required>
+              
+                              <div class="save-info">
+                                  <input type="checkbox" id="saveinfo" name="saveinfo">
+                                  <label for="saveinfo">Save this information for faster check-out next time</label>
+                              </div>
+              
+              
+                              <div class="payment-methods">
+                                  <div class="checkbox">
+              
+                                      <label for="bank">Bank</label>
+              
+              
+                                      <input type="radio" id="bank" name="payment" value="bank">
+              
+                                  </div>
+                                  <div class="payment-icons">
+                                      <img src="visa logo.png" alt="Visa">
+                                      <img src="mastercard icon.png" alt="MasterCard">
+                                      <img src="images-removebg-preview.png" alt="esewa">
+                                      <img src="khalti icon.png" alt="khalti">
+              
+                                  </div>
+                                  <div>
+              
+              
+                                      <label for="cod">Cash on delivery</label>
+              
+              
+              
+                                      <input type="radio" id="cod" name="payment" value="cod" checked </div>
+                                  </div>
+              
+              
+              
+                                  <div class="coupon">
+                                      <input type="text" id="coupon" name="coupon" placeholder="Enter coupon code">
+                                      <button type="button">Apply Coupon</button>
+                                  </div>
+              
+                                  <div class="place-order">
+                                      <button type="button">Place Order</button>
+                                  </div>
+                          </form>
+                      </div>
+                  </div></div> -->
+
+
+
+
+
+<!-- ----------------------------------Aabash end--------------------------------------------------- -->
+
+
+<div class="team">
+                      <span class="small">
+                      <h1 align="center">Our Team</h1></span>
+                    </div>
+ <div class="member">
+<div class="memberbox" align="center">
+  <div class="circle-image">
+      <img src="Anil photo.jpg" alt="Circular Image">
+  </div>
+  <h1>Anil Pandey</h1>
+    <p></p>
+    <p></p>
+  <div class="icon">     
+    <a href="https://www.facebook.com/SonOfPandey265"><i class="fa-brands fa-facebook"></i></a>   
+    <a href="https://www.instagram.com/son_of_pandey265/"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="https://x.com/sonofpandey"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-github"></i></a>
+  </div>
+</div>
+<div class="memberbox" align="center">
+  <div class="circle-image">
+      <img src="Utsab.jpg" alt="Circular Image">
+  </div>
+  <h1>Utsav Dulal</h1>
+    <p></p>
+    <p></p>
+  <div class="icon">      
+    <a href="https://www.facebook.com/utsavdulal01"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/utsav_dulal10/"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-github"></i></a> 
+  </div>
+</div>
+<div class="memberbox" align="center">
+  <div class="circle-image">
+      <img src="Aaabash.jpg" alt="Circular Image">
+  </div>
+  <h1>Aabash Subedi</h1>
+    <p></p>
+    <p></p>
+  
+  <div class="icon">
+      <a href="https://www.facebook.com/profile.php?id=100079023742753"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/aavash_subedi09/"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+  
+  </div>
+</div>
+<div class="memberbox" align="center">
+  <div class="circle-image">
+      <img src="Hanish.jpg" alt="Circular Image">
+  </div>
+  <h1>Hanish Kafle</h1>
+    <p></p>
+    <p></p>
+  <div class="icon">
+      <a href="https://www.facebook.com/hanish.kafle.12"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/hanishkafle/"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+      
+  </div>
+</div>
+<br>
+</div>
+<br><br>
+
+
+
+<footer>
+  
+  <div class="footer-container">
+
+    
+      
+      <div class="footer-section links">
+          <h2 >Quick Links</h2>
+          <ul>
+          
+              <p>
+                <span><a href="#">Contact Us</a></span><br>
+                <span><a href="#">Track an Order</a> </span><br>
+                <span><a href="#">Return Policy</a> </span><br>
+                <span><a href="#">Shipping Information</a></span><br>
+                
+              </p>
+          </ul>
+      </div>
+      
+    
+      <div class="footer-section about">
+        <h2>About NePiLap</h2>
+        <p>
+          <span><a href="#">Privacy Policy</a></span><br>
+          <span><a href="#">Warranty</a> </span><br>
+          <span><a href="#">News</a></span><br>
+          <span><a href="#">Blogs</a></span><br>
+        </p>
+    </div>
+
+     
+
+      <div class="footer-section newsletter">
+        <h2></h2>
+        <form id="BillingInfo">
+            <input type="email" id="email" placeholder="Your email address" required>
+            <a href="#" style="--clr:#1e9bff"><span><button type="submit">Subscribe</button></span><i></i></a>
+        </form>
+        <div class="payment">
+          <h1 padding-left="80px">Payment:</h1>
+          <img src="https://mudita.com.np/media/fonepay.png" alt="">
+          <img src="https://admin.itti.com.np/storage/setting/1fa80993-4bf1-42a4-8276-58175e8e69ec.svg" alt="">
+          <img src="https://admin.itti.com.np/storage/setting/4c749f7d-4740-4605-a17e-5cd8598f6565.svg" alt="">
+          <img src="https://admin.itti.com.np/storage/setting/6d2edbe0-77ed-48a7-ba5a-32948bc892a4.svg" alt="">
+          <img src="https://admin.itti.com.np/storage/setting/4a0f23c5-6e9a-49d2-b799-cc2240fa7b60.svg" alt="">
+        </div>
+      
+      
+        
+    </div>
+  </div>
+
+  <div class="nepilap">
+    <img src="NePiLap.png" alt="NePiLap.PNG">
+  </div>
+  
+  <div class="endfooter">
+
+  <div class="footer-bottom">
+      <p gap="30rem"> 2024 NePiLap. All rights reserved.</p>
+  </div>
+  <div class="footer-section social">
+    
+    <div class="social-icons">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-discord"></i></a>
+      <a href=""><i class="fa-brands fa-x-twitter"></i></a>  
+    </div>
+</div>
+</div>
+
+</footer>
+
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+                      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+                      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                      <script src="script.js"></script>
+</body>
+</html>
+

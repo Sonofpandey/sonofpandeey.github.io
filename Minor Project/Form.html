@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="website icon" type="png" href="website logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+            color: #6f2d40;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            overflow: hidden;
+            width: 800px;
+            max-width: 100%;
+        }
+        .image {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            background-image: url(https://cdni.iconscout.com/illustration/premium/thumb/online-registration-7964198-6381808.png);
+            background-repeat: no-repeat;
+            background-position:50%;
+            background-size: 400px;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+        .form-container {
+            padding: 40px;
+            width: 50%;
+        }
+      
+        .form-container p {
+            margin: 0 0 10px;
+            color: #666;
+        }
+        .form-container p a{
+            color:red;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #6f2d40;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container .btn:hover {
+            background-color: #9b4e62;
+        }
+        .form-container .google-btn {
+            background-color: #ffffff;
+            color: #757575;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-container .google-btn img {
+            margin-right: 10px;
+        }
+        .form-container .google-btn:hover {
+            background-color: #f5f5f5;
+        }
+
+
+
+    
+        .form-container .facbook-btn {
+            background-color: #ffffff;
+            color: #757575;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            object-fit: cover;
+            
+        }
+        .form-container .facbook-btn img {
+            margin-right: 10px;
+        }
+        .form-container .facbook-btn:hover {
+            background-color: #f5f5f5;
+        }
+        .form-container a {
+            color: #6f2d40;
+            text-decoration: none;
+        }
+
+       .form-container a:hover{
+        text-decoration: underline;
+       }
+        
+        .box i{
+            margin-left: 340px;
+            margin-bottom: 200px;
+                        
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image">
+     
+    </div>
+    <div class="form-container">
+        <h1>Create an Account</h1>
+        <p>Enter your details below</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email or Phone Number" required>
+            <div class="box">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <!-- <i class="toggle-password" id="togglePassword">👁️</i></div> -->
+            <button type="submit" class="btn">Create Account</button>
+            <button type="button" class="btn google-btn">
+                <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google logo"> 
+            </button>
+            <button type="button" class="btn facbook-btn">
+                <img src="" alt="Facbook logo"> 
+            </button>
+        </form>
+        <p>Already have an account? <a href="logIn.html">Log in</a></p>
+    </div>
+</div>
+<script>
+
+document.getElementById('togglePassword').addEventListener('click', function() {
+    const passwordField = document.getElementById('password');
+    const passwordFieldType = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordField.setAttribute('type', passwordFieldType);
+    
+    // Toggle the eye icon
+    this.textContent = passwordFieldType === 'password' ? '👁️' : '👁️‍🗨️';
+});
+</script>
+</body>
+</html>

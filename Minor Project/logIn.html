@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="website icon" type="png" href="website logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family:Arial, Helvetica, sans-serif ;
+                box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 19vh;
+                background-color: #f9f5f5;
+                /* background: url(https://png.pngtree.com/background/20230527/original/pngtree-an-image-of-a-small-shopping-cart-on-a-laptop-picture-image_2753898.jpg) ;
+                background-size: cover; */
+                background-position: center;
+                color: black;
+                height: 100vh;
+            }   
+
+            .head  {
+                
+                width:420px ;
+                background-color:transparent;
+                border-radius: 20px;
+                padding: 30px;
+                
+            }
+            .head h1{
+                font-size: 50px;
+                color:#6f2d40;
+            }
+            
+            
+            .head .box{
+                position: relative;
+                width:100%;
+                height:50px;
+                
+            }
+            
+            .box input{
+                
+                height: 100%;
+                width: 100%;
+                border: none;
+                outline:none ;
+                border-radius: 40px;
+                border: 2px solid #6f2d40;
+                color: #000;
+                background-color: transparent;
+                font-size: 16px;
+                padding:20px 45px 20px 20px;
+                
+            }
+
+            .toggle-password {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+            .head {
+                color: #000;
+                border: 2px solid #6f2d40;
+            }
+
+            .box input::placeholder{
+                color:#000;
+                width: calc(100% - 30px);
+            }
+            .box::placeholder{
+                color: #fff;
+            }
+
+            .box i{
+                position:absolute;
+                right: 20px;
+                top: 50%;
+                transform:translateY(-50%);
+            }
+            .head .remember{
+                display: flex;
+               justify-content: space-between;
+            }
+            .remember a{
+                color: #000;
+                text-decoration: none;
+            }
+
+            
+            .head button{
+                width: 100%;
+                height: 40px;
+                background-color:#6f2d40;       
+                color: white;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                box-sizing: 0 0 10px ;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            
+            .head button:hover{
+                background-color: #8c4156;
+               
+                transition:.3s;
+            }
+            
+            .head .Register{
+                
+                display: flex;
+                justify-content: center;
+                margin: 20px 0 15px;
+                
+            }
+            .Register a{
+                color: #000;
+                text-decoration: none;
+                    
+                    }
+        .logwith button{
+            border-radius: 2px solid red;
+        }
+
+        .logwith.btn:hover {
+            background-color: #d32f2f;
+        }
+        .logwith .google-btn {
+            background-color: #ffffff;
+            color: #757575;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logwith .google-btn img {
+            margin-right: 10px;
+        }
+        .logwith .google-btn:hover {
+            background-color: #f5f5f5;
+        }
+
+
+        .logwith .facebook-btn {
+            background-color: #ffffff;
+            color: #757575;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logwith .facebook-btn img {
+            margin-right: 10px;
+        }
+        .logwith .facebook-btn:hover {
+            background-color: #f5f5f5;
+        }
+        .remember a:hover{
+            text-decoration: underline;
+        }
+
+      
+        .regi:hover{
+            text-decoration: underline;
+        }
+   
+
+
+        </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1 align="center">Login</h1><br>
+
+  
+<div class="box">
+        <input type="text"  placeholder="Username">
+        <i class="fa-solid fa-user"></i>
+        <br><br></div><br><br>
+        <div class="box">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <i class="toggle-password" id="togglePassword">👁️</i>
+        <br></div><br>
+
+<div class="remember">
+        <label><input type="checkbox">Remember me</label>
+        
+
+        
+        <a href="Forgot password.html">Forget Password?</a> </div>
+        <br>
+        <br>
+        <a href="index.html"> <button type="submit">Login</button></a>
+       
+        <br><br>
+        <div class="Register">
+            <a href="form.html"Register>
+                <div class="dont">
+        <p>Don't have an account?</p></div>
+        <div class="regi"> Register</a></div>
+
+       </div>
+      
+
+       <p align="center">login with</p>
+<br>      <div class="logwith">
+
+        <button type="button" class="btn google-btn">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google logo"> 
+        </button>
+<br>
+        <button type="button" class="btn facebook-btn">
+            <img src="" alt="facbook logo"> 
+        </button>
+  
+    </div>
+        </div>
+        <script src="login.js"></script>
+</body>
+</html>

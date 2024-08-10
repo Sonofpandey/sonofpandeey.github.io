@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping card </title>
+    <style>
+        /* top  */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* here left side of catogires bar and shop card bar 20% and 80 doing*/
+        .mindlo {
+            display: flex;
+
+        }
+
+        .sidebar {
+            width: 20%;
+
+        }
+
+        .hanish {
+            width: 70%;
+        }
+
+        /* left side of bar */
+        .sidebar {
+            width: 20%;
+            background-color: #add8e6;
+            /* Light blue background */
+            padding: 20px;
+            border: 1px solid black;
+            /* Outline for the sidebar */
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .sidebar .view-more {
+            color: #ff6347;
+            /* Tomato color for 'View more' */
+            cursor: pointer;
+        }
+
+        .sidebar .price-filter {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .sidebar .price-filter input {
+            width: 60px;
+            padding: 5px;
+            margin: 0 10px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .sidebar .price-filter button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #ff6347;
+            /* Tamatar color for button */
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* shping cards */
+
+        .hanish {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            width: 70%;
+            position: relative;
+            top: -300;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            height: 300px;
+        }
+
+        .card:hover {
+            box-shadow: #333;
+            cursor: pointer;
+            animation-name: initial;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition-duration: 0.1ms;
+            animation-duration: 0.1ms;
+
+        }
+       
+
+
+        .card img {
+            border-radius: 8px;
+            height: 150px;
+            width: 100%;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        .card .a {
+            text-decoration: none;
+
+        }
+
+        .stars {
+            color: #ffa500;
+            display: block;
+        }
+
+        .free-delivery {
+            color: #28a745;
+            display: block;
+        }
+
+        .discount {
+            color: #dc3545;
+            display: block;
+        }
+
+        .price {
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .original-price {
+            color: #666;
+            font-size: 14px;
+            text-decoration: line-through;
+        }
+
+
+
+
+
+        @media (max-width: 480px) {
+
+          
+
+            .card {
+                width: 100%;
+            }
+
+
+
+
+            .hanish {
+                display: flex;
+
+            }
+
+            .card {
+                width: 90%;
+
+
+            }
+
+            .sidebar {
+                padding: 10px;
+            }
+
+            .sidebar h2 {
+                font-size: 15px;
+            }
+
+            .sidebar ul li {
+                font-size: 12px;
+            }
+
+            /* price serching tagss.*/
+
+            .price-filter {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .price-filter input,
+            .price-filter button {
+                width: 100%;
+                margin: 5px 0;
+
+            }
+        }
+
+        /* prodcut icon  */
+    </style>
+</head>
+
+<body>
+   
+    <section class="mindlo">
+
+
+        <div class="sidebar">
+            <h2>Category</h2>
+            <ul>
+                <li>New Model</li>
+                <li>Old Laptop</li>
+                <li>Macbooks</li>
+                <li>Basic Mice</li>
+                <li>DIY Laptop</li>
+                <li>Monitor</li>
+                <li class="view-more">+View more</li>
+            </ul>
+            <h2>Brand</h2>
+            <ul>
+                <li><input type="checkbox"> Apple</li>
+                <li><input type="checkbox"> HP</li>
+                <li><input type="checkbox"> Asus</li>
+                <li><input type="checkbox"> Lenovo</li>
+                <li><input type="checkbox"> Dell</li>
+                <li><input type="checkbox"> MSI</li>
+                <li class="view-more">+View more</li>
+            </ul>
+            <h2>Price</h2>
+            <div class="price-filter">
+                <input type="number" placeholder="Min">
+                <span>-</span>
+                <input type="number" placeholder="Max">
+                <button>Apply</button>
+            </div>
+
+            <h2>Storage</h2>
+            <ul>
+                <li><input type="checkbox"> 64GB</li>
+                <li><input type="checkbox"> 128GB</li>
+                <li><input type="checkbox"> 256GB</li>
+                <li><input type="checkbox"> 512GB</li>
+                <li><input type="checkbox"> 1TB</li>
+                <li><input type="checkbox"> 2TB</li>
+                <li class="view-more">+View more</li>
+
+
+
+            </ul>
+
+            <h2>RAM</h2>
+            <ul>
+                <li><input type="checkbox"> 2GB</li>
+                <li><input type="checkbox"> 4GB</li>
+                <li><input type="checkbox"> 8GB</li>
+                <li><input type="checkbox"> 16GB</li>
+                <li><input type="checkbox"> 32GB</li>
+                <li><input type="checkbox"> 64GB</li>
+                <li class="view-more">+View more</li>
+
+
+
+            </ul>
+        </div>
+        <!-- END RIGT SIDE SITE BAR -->
+
+
+        <div class="hanish">
+
+            <div class="card" alt="">
+
+
+
+                 <a href="product deails.html"><img src="image1.jpg" alt=""></a>
+                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+            </div>
+            <div class="card">
+             <a href="product deails.html" >  <img src="image2.webp" alt="Laptop 2"></a>
+                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image3.jpg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+            </div>
+
+
+            <div class="card">
+
+                <a href="product deails.html"><img src="image 4.jpg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image9.webp" alt=""></a>                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image10.jpg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+            </div>
+
+
+            <div class="card">
+
+                <a href="product deails.html"><img src="image13.webp" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image14.jpeg" alt=""></a>                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image15.jpeg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+            </div>
+
+            <div class="card">
+
+                <a href="product deails.html"><img src="image16.jpeg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image17.jpg" alt=""></a>                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image2.webp" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+            </div>
+
+
+            <div class="card">
+
+                <a href="product deails.html"><img src="image1.jpg" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 120,000 <span class="original-price">Rs. 150,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image 4.jpg" alt=""></a>                <h3>Lenveo Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 5/5 (2)</span><span class="discount">50% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 120,000</span></p>
+            </div>
+            <div class="card">
+
+                <a href="product deails.html"><img src="image9.webp" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+            </div>
+
+            <div class="card">
+
+                <a href="product deails.html"><img src="image13.webp" alt=""></a>                <h3>Acer Nitro 5 Ryzen 7<br>16GB Ram 512Gb SSD</h3>
+                <p><span class="stars">⭐ 3.5/5 (2)</span><span class="free-delivery">Free delivery</span><span
+                        class="discount">5% off</span></p>
+                <p class="price">Rs. 90,000 <span class="original-price">Rs. 100,000</span></p>
+            </div>
+            <!-- Repeat for other laptop listings -->
+        </div>
+
+    </section>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>More product details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    flex: 2 1 600px;
+    padding: 20px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buy-online {
+    background-color: #c65050;
+    color: #fff;
+}
+
+.where-to-buy {
+    background-color: #fff;
+    color: #1a73e8;
+    border: 1px solid #1a73e8;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.rating span {
+    font-size: 16px;
+    color: #ff8c00;
+}
+
+.rating a {
+    font-size: 14px;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.benefits {
+    background-color: #e7eff9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.benefits h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.benefits ul {
+    list-style: none;
+}
+
+.benefits ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .product-details {
+        padding: 20px 10px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}
+
+.product .price-rating {
+    display: flex;
+    gap: 10px;
+    font-size: larger;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product .price-rating .new-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product .price-rating .old-price {
+    color: red;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.product .price-rating .discount {
+    color: green;
+    font-size: 20px;
+}
+.checked {
+  color: orange;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="product">
+            <div class="product-image">
+                <img src="image17.jpg" alt="MacBook">
+            </div>
+            <div class="product-details">
+                <h1>Apple MacBook M1 - Revolutionary Performance and Efficiency</h1>
+                <p>Experience unmatched performance and efficiency with the Apple MacBook M1, powered by the revolutionary M1 chip.</p>
+                <div class="price-rating">
+                    <p class="new-price">Rs150</p>
+                    <p class="old-price">Rs1500,000</p>
+                    <p class="discount">15% off</p>
+                </div>
+                <div class="actions">
+                    <button class="buy-online">Buy Online</button>
+                    <button class="where-to-buy">Add to Cart</button>
+                </div>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+                    <span>4.4 (27)</span>
+                    <a href="#">Write a review</a>
+                </div>
+                <div class="benefits">
+                    <h2>Benefits</h2>
+                    <ul>
+                        <li>Exceptional performance with Apple's M1 chip.
+
+
+
+                        </li>
+                        <li>Fanless design for silent operation.
+
+                        </li>
+                        <li>Enhanced graphics performance for creativity and gaming.</li>
+                        <li>Cool and efficient under heavy workloads.
+                        </li>
+                        <li>Verified by the Non-GMO Project’s product verification program</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

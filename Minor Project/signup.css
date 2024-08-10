@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    color: #6f2d40;
+}
+
+.signup-container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    height: 630px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #6f2d40;
+    border-radius: 20px;
+    text-align: center;
+    background-color:#f6f2f2;
+    box-sizing: border-box;
+    box-shadow: 2px solid black;
+}
+
+.signup-container h1 {
+    font-weight: 500px;
+    color: #6f2d40;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom:-40px;
+    margin-left: 120px;
+}
+
+.form-group input {
+  margin-left: 35px;
+    width: 70%;
+    border: none;
+    outline:none ;
+    border-radius: 40px;
+    border: 2px solid #6f2d40;
+    color: #000;
+    background-color: transparent;
+    font-size: 16px;
+    padding:20px 45px 20px 20px;
+}
+
+
+.form-group i {
+    position:relative;
+
+    left: 250px;
+    color: #999;
+}
+
+.form-group small {
+    color:#6f2d40;
+    visibility: hidden;
+}
+
+button {
+     width: 70%;
+     height: 40px;
+     background-color:#6f2d40;       
+     color: white;
+     border: none;
+     outline: none;
+     border-radius: 20px;
+     box-sizing: 0 0 10px ;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 600;
+}
+
+button:hover {
+    background-color:#8f465b;
+}
+
+.facbook,.google{
+    
+    width: 50%;
+     height: 40px;
+     border: 2px solid #6f2d40;    
+     outline: none;
+     border-radius: 10px;
+     box-sizing: 0 0 10px ;
+     color: #000;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 600;
+     margin-left: 110px;
+     background-image: url(login.svg.png);
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit:calc();
+
+}
+    .google img{
+        margin-right: 120px;
+        margin-top: 5px;
+        
+    }
+    .facbook img{
+        margin-right: 120px;
+        margin-top: 5px;
+      
+    }
+
+    .facbook p{
+margin-left:60px;
+    }
+    .google p{
+       margin-left: 60px;
+
+    }
+
+

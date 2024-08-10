@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .form-section input,
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        .form-section label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .payment-methods,
+        .payment-icons,
+        .coupon,
+        .place-order,
+        .save-info {
+            margin-top: 20px;
+        }
+
+        .payment-methods input {
+            margin-right: 10px;
+        }
+
+        .payment-icons {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .payment-icons img {
+            height: 25px;
+            margin-right: 10px;
+        }
+
+        .coupon {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .coupon input {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .coupon button,
+        .place-order button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .coupon button:hover,
+        .place-order button:hover {
+            background-color: #e60000;
+        }
+
+        .save-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .save-info input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Billing Details</h2>
+            <form>
+                <label for="fname">First Name*</label>
+                <input type="text" id="fname" name="fname" required>
+
+                <label for="cname">Company Name</label>
+                <input type="text" id="cname" name="cname">
+
+                <label for="address">Street Address*</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="apartment">Apartment, floor, etc. (optional)</label>
+                <input type="text" id="apartment" name="apartment">
+
+                <label for="city">Town/City*</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="phone">Phone Number*</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+
+                <div class="save-info">
+                    <input type="checkbox" id="saveinfo" name="saveinfo">
+                    <label for="saveinfo">Save this information for faster check-out next time</label>
+                </div>
+
+                <div class="payment-methods">
+                    <input type="radio" id="bank" name="payment" value="bank">
+                    <label for="bank">Bank</label>
+                    <input type="radio" id="cod" name="payment" value="cod" checked>
+                    <label for="cod">Cash on delivery</label>
+                </div>
+
+                <div class="payment-icons">
+                    <img src="https://via.placeholder.com/50x30?text=Visa" alt="Visa">
+                    <img src="https://via.placeholder.com/50x30?text=MasterCard" alt="MasterCard">
+                    <img src="https://via.placeholder.com/50x30?text=Bkash" alt="Bkash">
+                    <img src="https://via.placeholder.com/50x30?text=Rocket" alt="Rocket">
+                </div>
+
+                <div class="coupon">
+                    <input type="text" id="coupon" name="coupon" placeholder="Enter coupon code">
+                    <button type="button">Apply Coupon</button>
+                </div>
+
+                <div class="place-order">
+                    <button type="button">Place Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
